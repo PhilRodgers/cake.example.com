@@ -223,11 +223,9 @@ return [
      * appropriate file to src/Mailer/Transport. Transports should be named
      * 'YourTransport.php', where 'Your' is the name of the transport.
      */
-    ''EmailTransport' => [
+    'EmailTransport' => [
         'default' => [
-            // turn on for email through server
-            // 'className' => MailTransport::class,
-            'className' => 'Debug',
+            'className' => MailTransport::class,
             /*
              * The keys host, port, timeout, username, password, client and tls
              * are used in SMTP transports
